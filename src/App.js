@@ -28,8 +28,8 @@ function App() {
           <input type="search" onChange={(e) => onKeyUp(e)} value={query} placeholder={"digite sua query"} />
           <button type="submit">Enviar</button>
         </form>
-        {result === "Infelizmente Query inválida"
-          ? result
+        {result === "Query inválida"
+          ? "Query infelizmente inválida"
           : result.map((r, i) => (
               <div>
                 <h3>Resultado Nº {i + 1}</h3>
